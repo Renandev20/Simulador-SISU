@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador SISU 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="left-panel">
+        <h1>Simulador SISU</h1>
+        <p>Descubra suas chances no SISU 2025 com base nas suas notas do ENEM.</p>
+    </div>
+    <div class="right-panel">
+        <div class="container">
+            <div class="step active" id="step1">
+                <h1>Informe suas notas no ENEM 2024</h1>
+                <div class="inputs-container">
+                    <input type="number" id="matematica" placeholder="Mat">
+                    <input type="number" id="humanas" placeholder="Hum">
+                    <input type="number" id="natureza" placeholder="Nat">
+                    <input type="number" id="linguagens" placeholder="Ling">
+                    <input type="number" id="redacao" placeholder="Red">
+                </div>
+                <button class="btn" onclick="nextStep()">Próxima etapa</button>
+            </div>
+
+            <div class="step" id="step2">
+                <h1>Adicione suas informações</h1>
+                <div class="inputs-container">
+                    <input type="text" id="estado" placeholder="Estado">
+                    <input type="text" id="cidade" placeholder="Cidade">
+                    <input type="text" id="escolaridade" placeholder="Esc">
+                    <input type="text" id="curso" placeholder="Curso">
+                    <input type="text" id="cotas" placeholder="Cotas">
+                </div>
+                <div class="navigation">
+                    <button class="btn" onclick="prevStep()">Voltar</button>
+                    <button class="btn" onclick="nextStep()">Próxima etapa</button>
+                </div>
+            </div>
+
+            <div class="step" id="step3">
+                <h1>Seu Resultado</h1>
+                <p id="resultado">Simulação concluída com base nos dados inseridos.</p>
+                <button class="btn" onclick="prevStep()">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

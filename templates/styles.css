@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.left-panel {
+    width: 40%;
+    background: linear-gradient(135deg, #00d382, #00a25a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.left-panel h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.right-panel {
+    width: 60%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.step {
+    display: none;
+    text-align: center;
+}
+
+.step.active {
+    display: block;
+}
+
+input {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    outline: none;
+    margin: 5px;
+}
+
+.inputs-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #00d382;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #00a25a;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.navigation button {
+    flex: 1;
+}
