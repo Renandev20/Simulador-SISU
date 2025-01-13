@@ -1,4 +1,3 @@
-
 # Simulador SISU 2025
 
 Este é um simulador criado para ajudar candidatos do SISU 2025 a estimarem suas chances de ingresso em universidades com base nas notas do ENEM 2024. O projeto é uma aplicação web simples que permite o cálculo de médias ponderadas, a simulação de resultados e fornece informações úteis de acordo com os dados fornecidos.
